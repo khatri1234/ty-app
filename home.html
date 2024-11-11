@@ -1,0 +1,113 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LabsAdvisor - Home</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <p>08061-97-05-25</p>
+        </div>
+        <div class="header-main">
+            <div class="logo">
+                
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="signup.html">Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="search-bar">
+            <input type="text" id="testInput" placeholder="Enter test to find labs & know cost">
+            <button id="searchButton" type="button">Search Test</button>
+        </section>
+
+        <section class="content">
+            <div class="content-banner">
+                <h1>Book Any Medical Test Across India</h1>
+                <ul>
+                    <li>200+ Certified Labs</li>
+                    <li>Assured Quality or Money Back</li>
+                    <li>Lowest Price Guarantee</li>
+                    <li>Excellent Customer Care</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="test-buttons">
+            <div class="test-category">
+                <h3>Most Popular Tests</h3>
+                <button class="test-button" onclick="showCityPopup('PET CT Scan')">PET CT SCAN</button>
+                <button class="test-button" onclick="showCityPopup('MRI Scan Spine Lumber')">MRI SCAN SPINE LUMBER</button>
+                <button class="test-button" onclick="showCityPopup('MRI Scan Brain')">MRI SCAN BRAIN</button>
+                <button class="test-button" onclick="showCityPopup('CT Scan Brain')">CT SCAN BRAIN</button>
+                <button class="test-button" onclick="showCityPopup('PET CT Scan')">PET CT SCAN</button>
+        <button class="test-button" onclick="showCityPopup('MRI Scan Spine Lumber')">MRI SCAN SPINE LUMBER</button>
+        <button class="test-button" onclick="showCityPopup('MRI Scan Brain')">MRI SCAN BRAIN</button>
+        <button class="test-button" onclick="showCityPopup('CT Scan Brain')">CT SCAN BRAIN</button>
+        <button class="test-button" onclick="showCityPopup('CT Scan Spine Lumber')">CT SCAN SPINE LUMBER</button>
+        <button class="test-button" onclick="showCityPopup('DEXA Scan')">DEXA SCAN</button>
+        <button class="test-button" onclick="showCityPopup('CT Scan Chest')">CT SCAN CHEST</button>
+        <button class="test-button" onclick="showCityPopup('Ultrasound Whole Abdomen')">ULTRASOUND WHOLE ABDOMEN</button>
+        <button class="test-button" onclick="showCityPopup('Ultrasound Pregnancy')">ULTRASOUND PREGNANCY</button>
+        <button class="test-button" onclick="showCityPopup('X-Ray Chest')">X-RAY CHEST</button>
+        <button class="test-button" onclick="showCityPopup('X-Ray Spine')">X-RAY SPINE</button>
+        <button class="test-button" onclick="showCityPopup('Blood Test - Complete Hemogram')">BLOOD TEST - COMPLETE HEMOGRAM</button>
+        <button class="test-button" onclick="showCityPopup('Blood Test - Lipid Profile')">BLOOD TEST - LIPID PROFILE</button>
+        <button class="test-button" onclick="showCityPopup('Blood Test - Liver Function')">BLOOD TEST - LIVER FUNCTION</button>
+        <button class="test-button" onclick="showCityPopup('Blood Test - Kidney Function')">BLOOD TEST - KIDNEY FUNCTION</button>
+        <button class="test-button" onclick="showCityPopup('Blood Test - Thyroid Profile')">BLOOD TEST - THYROID PROFILE</button>
+        <button class="test-button" onclick="showCityPopup('Blood Test - Vitamin D')">BLOOD TEST - VITAMIN D</button>
+        <button class="test-button" onclick="showCityPopup('Blood Test - HbA1c')">BLOOD TEST - HBA1C</button>
+        <button class="test-button" onclick="showCityPopup('Urine Test - Routine Examination')">URINE TEST - ROUTINE EXAMINATION</button>
+        <button class="test-button" onclick="showCityPopup('Urine Test - Culture & Sensitivity')">URINE TEST - CULTURE & SENSITIVITY</button>
+            </div>
+            <!-- Add more categories and tests as needed -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 LabsAdvisor. All Rights Reserved.</p>
+    </footer>
+
+    <!-- City Popup Modal -->
+    <div id="cityPopup" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeCityPopup()">&times;</span>
+            <h2>Enter your city</h2>
+            <input type="text" id="cityInput" placeholder="Enter City Name">
+            <button onclick="redirectToCentersPage()">Search Centers</button>
+        </div>
+    </div>
+
+    <script>
+        function showCityPopup(testName) {
+            document.getElementById('cityPopup').style.display = 'block';
+            document.getElementById('testInput').value = testName;
+        }
+
+        function closeCityPopup() {
+            document.getElementById('cityPopup').style.display = 'none';
+        }
+
+        function redirectToCentersPage() {
+            const city = document.getElementById('cityInput').value;
+            const test = document.getElementById('testInput').value;
+            if (city) {
+                window.location.href = `centers.html?city=${city}&test=${test}`;
+
+            } else {
+                alert('Please enter a city name');
+            }
+        }
+    </script>
+</body>
+</html>       

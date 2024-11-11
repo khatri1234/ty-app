@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LabsAdvisor - Admin</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-top">
+            <p>08061-97-05-25</p>
+        </div>
+        <div class="header-main">
+            <div class="logo">
+                <img src="C:\Users\sumeet khatri\OneDrive\Pictures\logo-front.jpg" alt="LabsAdvisor Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="admin.html">Admin Dashboard</a></li>
+                    <li><a href="logout.html">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="admin-dashboard">
+            <h1>Admin Dashboard</h1>
+            <div class="dashboard-container">
+                <!-- Section for managing tests -->
+                <div class="admin-section">
+                    <h2>Manage Tests</h2>
+                    <button onclick="location.href='add-test.html'" class="admin-button">Add New Test</button>
+                    <button onclick="location.href='manage-tests.html'" class="admin-button">Manage Existing Tests</button>
+                </div>
+
+                <!-- Section for managing users -->
+                <div class="admin-section">
+                    <h2>Manage Users</h2>
+                    <button onclick="location.href='manage-users.html'" class="admin-button">View All Users</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 LabsAdvisor. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

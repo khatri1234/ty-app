@@ -1,0 +1,25 @@
+[
+    {
+      "TestCenterId": "MUM001",
+      "name": "Mumbai Central Diagnostics",
+      "location": {
+        "address": "123 Mumbai Central, Mumbai 400008",
+        "coordinates": [72.8246, 18.9711]
+      },
+      "phone": "+91 22 1234 5678",
+      "email": "info@mumbaicentral.com",
+      "operatingHours": "Mon-Sat: 7:00 AM - 9:00 PM, Sun: 8:00 AM - 6:00 PM"
+    },
+    {
+      "TestCenterId": "MUM002",
+      "name": "Andheri Lab Services",
+      "location": {
+        "address": "456 Andheri West, Mumbai 400053",
+        "coordinates": [72.8425, 19.1206]
+      },
+      "phone": "+91 22 2345 6789",
+      "email": "contact@andherilab.com",
+      "operatingHours": "Mon-Sat: 6:30 AM - 8:30 PM, Sun: 8:00 AM - 5:00 PM"
+    }
+  ]
+  
